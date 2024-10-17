@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MiEmpresa</div>
+            <ul>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenido a MiEmpresa</h1>
+        <p>La solución a tus necesidades de consultoría financiera.</p>
+        <button onclick="scrollToSection()">Descubre Más</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una firma dedicada a brindar soluciones financieras personalizadas para pequeñas y medianas empresas.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-card">
+            <h3>Consultoría Financiera</h3>
+            <p>Te ayudamos a optimizar tus finanzas y a mejorar la rentabilidad de tu negocio.</p>
+        </div>
+        <div class="service-card">
+            <h3>Planificación Fiscal</h3>
+            <p>Asesoramiento fiscal para maximizar tus ahorros y cumplir con las normativas.</p>
+        </div>
+        <div class="service-card">
+            <h3>Auditoría Interna</h3>
+            <p>Garantizamos que tu empresa cumpla con los estándares contables más exigentes.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 MiEmpresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
